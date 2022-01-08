@@ -82,7 +82,7 @@ class FlutterOpenvpn {
           default:
             _onVPNStatusChanged?.call(call.method);
         }
-        return null;
+        return Future.value(null);
       } as Future<dynamic> Function(MethodCall)?);
       return isInited;
     } else {
